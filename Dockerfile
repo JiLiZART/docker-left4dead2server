@@ -1,13 +1,9 @@
-FROM debian:stretch-slim
-
+FROM cm2network/steamcmd
 
 # Default configurations
 
 ENV SV_HOSTNAME "L4D2 Server"
 ENV SV_RCON_PASSWORD "rconpassword"
-
-
-ENV DEBIAN_FRONTEND noninteractive
 
 EXPOSE 27015
 EXPOSE 27015/udp
